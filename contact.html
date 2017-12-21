@@ -5,6 +5,24 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200" rel="stylesheet">
+        <style>
+/*            body{*/
+/*                font-family: 'Source Code Pro', monospace !important;*/
+                
+/*            }*/
+            small{
+                padding-left:5px;
+            }
+            .flex{
+                    width: 100%;
+    display: flex;
+                 padding: 1rem 0;   
+    justify-content: space-between;
+            }
+            
+        </style>
 	</head>
 	<body class="subpage">
 
@@ -31,14 +49,39 @@
 					<div class="grid-style">
 
 						<div style="    padding: 0;">
-							<div class="box">
+							<div class="box"  style="background:#dfdfdf">
 								<div class="image fit">
 								</div>
-								<div class="content">
+								<div id=ctext class="content" style="
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+">
 									<header class="align-center">
-									                                        <h2><u>Contact Us</u></h2>
+									                                        <h2 style="
+    color: #000000;    margin-top: -5rem; font-weight: bold; font-family: impact; font-size: 2em;   
+">Contact Us</h2>
 									</header>
-									 <h2>Carnegie Pharmaceuticals, LLC<br>Attn: Rakesh Grover, Ph.D.<br>9 Deerpark Drive, Suite A<br>Monmouth Junction, NJ 08852<br>USA<br>Tel: +1 (732) 783-7010<br>Fax: +1 (732) 823-1484<br>E-Mail: info@carnegiepharma.com</h2>
+									 <h2 style="
+    color: #000000;text-align: center; font-family: verdana; font-weight: 500;
+">Carnegie Pharmaceuticals, LLC<br>9 Deerpark Drive, Suite A<br>Monmouth Junction, NJ 08852<br>USA<br>
+                                         <div class="flex">
+                                            <div style="border-right:1px solid red;padding:1rem;">
+                                              <i style="    font-size: 2.5rem;
+    color: #ff8600;"class="lnr lnr-phone"></i>  <small>phone</small><br>
+                                                +1 (732) 783-7010
+                                             </div>
+                                             <div style="padding:1rem;">
+                                              <i style="    font-size: 2.5rem;
+    color: #ff8600;"class="lnr lnr-printer"></i><small>Fax</small> <br>+1 (732) 823-1484
+                                             </div>
+                                            
+                                         </div>
+                                          
+                                         
+                                         <i style="    font-size: 2.5rem;
+    color: #ff8600;"class="lnr lnr-inbox"></i><small></small> info@carnegiepharma.com</h2>
 									
 								</div>
 							</div>
@@ -47,12 +90,10 @@
 							<div class="box">
 								<div class="image fit">
 								</div>
-								<div class="content">
-									<header class="align-center">
-									                                        <h2><u>Maps</u></h2>
-									</header>
+								<div id=mapct class="content" style="padding:0">
+									
 <!--									 <h2>Carnegie Pharmaceuticals, LLC<br>Attn: Rakesh Grover, Ph.D.<br>9 Deerpark Drive, Suite A<br>Monmouth Junction, NJ 08852<br>USA<br>Tel: +1 (732) 783-7010<br>Fax: +1 (732) 823-1484<br>E-Mail: info@carnegiepharma.com</h2>-->
-                                    <div id=map style="height: 305px;"></div>
+                                    <div id=map height:300px;></div>
 									
 								</div>
 							</div>
@@ -490,6 +531,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
 			<script src="assets/js/main.js"></script>
         <script>
       function initMap() {
+          var height = window.innerHeight;
         var uluru = {lat: 40.375984, lng: -74.586766};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 14,
@@ -499,6 +541,15 @@ print 'It took ' + i + ' iterations to sort the deck.';
           position: uluru,
           map: map
         });
+          $("#mapct").css({
+              height:height
+          });
+           $("#map").css({
+              height:height-50 +"px"
+          });
+           $("#ctext").css({
+              height:height
+          })
       }
     </script>
         <script async defer

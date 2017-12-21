@@ -4,6 +4,19 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+        #header.alt {
+    -moz-animation: none;
+    -webkit-animation: none;
+    -ms-animation: none;
+    animation: none;
+    background-color: black;
+    box-shadow: none;
+    overflow: hidden;
+    position: absolute;
+     top: 0em; 
+}
+        </style>
 	</head>
 	<body>
 
@@ -30,14 +43,26 @@
 
 
 <!-- two -->
-<section id="two" class="wrapper style3">
+<section id="two" class="wrapper style3" style="    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;padding: 0">
+                <img src="../../bwi.png" data-brackets-id="1009" style="
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(4px);
+">>
 				<div class="inner">
 					<header class="align-center">
 						
-						<!--<h2>Carnegie Pharma's Business Model</h2> -->
-                        <p>Carnegie Pharmaceuticals selects, develops, file to FDA and commercially manufactures unique/barrier-to-entry projects, including paragraph IV projects, across various dosage forms in collaboration with pharma companies.  <br>
+						<h2>Carnegie Pharma's Business Model</h2> 
+                        <p style="font-size: large;padding: 0;">
+                            <span style="    background: #424241;    box-shadow: -3px 17px 13px 3px #212121;">Carnegie Pharmaceuticals selects, develops, file to FDA and commercially manufactures unique/barrier-to-entry projects, including paragraph IV projects, across various dosage forms in collaboration with pharma companies. </span> <br>
                             <br><br><br>
-                            Carnegie Pharma <br><br><br><br><br><br><br><br><br><br><br><br>
+                            
 </p>
 					</header>
 				</div>
@@ -49,6 +74,12 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+        <script>
+          var height = window.innerHeight;
+            $("#two").css({
+                height:height
+            })
+        </script>
 
 	</body>
 </html>

@@ -2,13 +2,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 
-/*
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
 
-/* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -1688,7 +1682,7 @@
 			}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 300;
+		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
 	}
@@ -3337,11 +3331,11 @@
 			}
 
 			.wrapper.style3 p {
-				text-transform: uppercase;
+				text-transform: none;
                 font-size: .95rem;
 				font-weight: 300;
 				margin: 0 0 .5rem 0;
-				padding: 180 10 1rem 10;
+				padding: 10 10 1rem 10;
 				letter-spacing: .25rem;
 			}
 
@@ -3354,7 +3348,7 @@
 					left: 0;
 					width: 50%;
 					height: 1px;
-					background-color: rgba(255, 255, 255, 255);
+/*					background-color: rgba(255, 255, 255, 255);*/
 				}
 
 			.wrapper.style3:before {
@@ -3739,8 +3733,11 @@
 		}
 
 			#header > .logo a {
-				font-size: 1.25em;
+				font-size: 1.75em;
 				color: #FFF;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: 300 16px/26px "museo-sans",sans-serif;
 				text-decoration: none;
 			}
 
@@ -3767,11 +3764,12 @@
 		}
 
 			#header > a:hover {
-				color: #f2f2f2;
+				color: #ffffff;
 			}
 
 			#header > a[href="#menu"] {
 				text-decoration: none;
+                font-size: 1.5em;
 				-webkit-tap-highlight-color: transparent;
 			}
 
@@ -3796,7 +3794,7 @@
 			}
 
 			#header > a:last-child {
-				padding-right: 1.25em;
+				padding-right: 1.75em;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -3828,11 +3826,11 @@
 			-webkit-animation: none;
 			-ms-animation: none;
 			animation: none;
-			background-color: transparent;
+			background-color: #000000;
 			box-shadow: none;
 			overflow: hidden;
 			position: absolute;
-			top: 1.5em;
+			top: 0em;
 		}
 
 			#header.alt h1 {
@@ -4163,7 +4161,15 @@
 				.banner > article .inner > :last-child {
 					margin-bottom: 0;
 				}
-
+.showmore{
+/*    height:30%;*/
+    overflow:hidden;
+    transition: all ease 1s;
+}
+.collapser{
+    display: none;
+    padding: 1rem 2rem;
+}
 			.banner > article h2 {
 				font-size: 7rem;
 				margin-bottom: 0;
@@ -4176,10 +4182,11 @@
 				}
 
 			.banner > article p {
-				color: rgba(255, 255, 255, 0.65);
+				color: rgba(255, 255, 255, 255);
 				text-transform: uppercase;
-				font-size: 1rem;
-				font-weight: 300;
+				font-size: 4rem;
+				font-weight: bold;
+                font-family: "helvetica neue";
 				margin: 0;
 				padding-bottom: 1.75rem;
 				letter-spacing: .25rem;
@@ -4194,7 +4201,7 @@
 					left: 0;
 					width: 50%;
 					height: 1px;
-					background-color: rgba(255, 255, 255, 0.65);
+/*					background-color: rgba(255, 255, 255, 0.65);*/
 				}
 
 			.banner > article a {
